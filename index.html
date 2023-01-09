@@ -5,11 +5,150 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;200;300;400;500;600;700&family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>DrivenEats</title>
 </head>
 <body>
-    
+    <div class="topo">
+        <div>
+            <h1>
+                DrivenEats
+            </h1>
+        </div>
+        <div>
+            <h3>
+                Sua comida em 6 minutos
+            </h3>
+        </div>
+    </div>
 
+    <div class="containerPrincipal">
+        <div class="tituloPedido">
+            <h2>
+                Primeiro, seu prato
+            </h2>
+        </div>
+        <div class="opcoes prato">
+            <div data-test="dish" class="opcao" onclick="selecionaroPrato(this)">
+                <img src="imagens/frango_yin_yang.png" alt="">
+                <h4 data-test="item-name">Frango Yin Yang</h4>
+                <p>
+                    Um pouco de batata, um pouco de salada
+                </p>
+                <h5 data-test="item-price">
+                    R$ 14,90
+                </h5>
+            </div>
+            
+            <div data-test="dish" class="opcao" onclick="selecionaroPrato(this)">
+                <img src="imagens/carne.png" alt="">
+                <h4 data-test="item-name">Carne com batata</h4>
+                <p>
+                    Um pouco de batata, um pouco de salada
+                </p>
+                <h5 data-test="item-price">
+                    R$ 17,90
+                </h5>
+            </div>
+
+            <div data-test="dish" class="opcao" onclick="selecionaroPrato(this)">
+                <img src="imagens/porco.png" alt="">
+                <h4 data-test="item-name">Porco</h4>
+                <p>
+                    Um pouco de batata, um pouco de salada
+                </p>
+                <h5 data-test="item-price">
+                    R$ 15,90
+                </h5>
+            </div>
+
+        </div>
+        <div class="tituloPedido">
+            <h2>
+                Agora, sua bebida
+            </h2>
+        </div>
+        <div class="opcoes bebida">
+            <div data-test="drink" class="opcao" onclick="selecionaroBebida(this)">
+                <img src="Imagens/coca-cola.png" alt="">
+                <h4 data-test="item-name">Coca Lata</h4>
+                <p>
+                    Lata Normal 350ml
+                </p>
+                <h5 data-test="item-price">
+                    R$ 4,90
+                </h5>
+            </div>
+            
+            <div data-test="drink" class="opcao" onclick="selecionaroBebida(this)">
+                <img src="Imagens/coca-cola.png" alt="">
+                <h4 data-test="item-name">coca-cola Zero</h4>
+                <p>
+                    Lata Zero 350ml
+                </p>
+                <h5 data-test="item-price">
+                    R$ 5,90
+                </h5>
+            </div>
+
+            <div data-test="drink" class="opcao" onclick="selecionaroBebida(this)">
+                <img src="Imagens/coca-cola.png" alt="">
+                <h4 data-test="item-name">Coquinha gelada</h4>
+                <p>
+                    Lata verde 350ml
+                </p>
+                <h5 data-test="item-price">
+                    R$ 6,90
+                </h5>
+            </div>
+        </div>
+        <div class="tituloPedido">
+            <h2>
+                Por fim, sua sobremesa
+            </h2>
+        </div>
+        <div class="opcoes sobremesa">
+            <div data-test="dessert" class="opcao" onclick="selecionaroSobremesa(this)">
+                <img src="Imagens/pudim.png" alt="">
+                <h4 data-test="item-name">Pudim com calda</h4>
+                <p>
+                    Pudim Brasileiro
+                </p>
+                <h5 data-test="item-price">
+                    R$ 7,90
+                </h5>
+            </div>
+            
+            <div data-test="dessert" class="opcao" onclick="selecionaroSobremesa(this)">
+                <img src="Imagens/pudim-chocolate.png" alt="">
+                <h4 data-test="item-name">Pudim de chocolate</h4>
+                <p>
+                    Pudim de Chocolate com paçoca
+                </p>
+                <h5 data-test="item-price">
+                    R$ 9,90
+                </h5>
+            </div>
+
+            <div data-test="dessert" class="opcao" onclick="selecionaroSobremesa(this)">
+                <img src="Imagens/pudim-top.png" alt="">
+                <h4 data-test="item-name">Pudim Gourmet</h4>
+                <p>
+                    Pudim Gourmet
+                </p>
+                <h5 data-test="item-price">
+                    R$ 16,90
+                </h5>
+            </div>
+        </div>
+        <div class="baixo">
+            <button data-test="order-btn" class="internoBaixo">
+                <h6>
+                    Selecione os 3 itens para fechar o pedido
+                </h6>
+            </button>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
